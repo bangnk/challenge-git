@@ -1,0 +1,14 @@
+git clone https://github.com/Interlincx/challenge-git.git
+cd challenge-git  
+git checkout add-echo 
+git rebase master
+git checkout master
+git merge add-echo --ff
+
+git checkout add-reverse
+git rebase master
+git checkout master
+git merge add-reverse --ff
+
+git remote set-url origin https://GITHUB_PERSONAL_TOKEN@github.com/bangnk/challenge-git.git
+git push
